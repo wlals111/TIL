@@ -5,7 +5,7 @@
 ## javascript
 
 - [화살표 함수](https://github.com/wlals111/TIL/blob/main/javascript/%ED%99%94%EC%82%B4%ED%91%9C%20%ED%95%A8%EC%88%98.md)
-
 - [콜백함수](https://github.com/wlals111/TIL/blob/main/javascript/%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98.md)
-
 - [객체](https://github.com/wlals111/TIL/blob/main/javascript/%EA%B0%9D%EC%B2%B4.md)
+- [배열](https://github.com/wlals111/TIL/blob/main/javascript/%EB%B0%B0%EC%97%B4.md)
+- [반복문](https://github.com/wlals111/TIL/blob/main/javascript/%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
