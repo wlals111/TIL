@@ -9,3 +9,4 @@
 - [객체](https://github.com/wlals111/TIL/blob/main/javascript/%EA%B0%9D%EC%B2%B4.md)
 - [배열](https://github.com/wlals111/TIL/blob/main/javascript/%EB%B0%B0%EC%97%B4.md)
 - [반복문](https://github.com/wlals111/TIL/blob/main/javascript/%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
+- [배열 메소드](https://github.com/wlals111/TIL/blob/main/javascript/%EB%B0%B0%EC%97%B4%EB%A9%94%EC%86%8C%EB%93%9C.md)
