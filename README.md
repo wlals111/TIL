@@ -9,4 +9,8 @@
 - [객체](https://github.com/wlals111/TIL/blob/main/javascript/%EA%B0%9D%EC%B2%B4.md)
 - [배열](https://github.com/wlals111/TIL/blob/main/javascript/%EB%B0%B0%EC%97%B4.md)
 - [반복문](https://github.com/wlals111/TIL/blob/main/javascript/%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
-- [배열 메소드](https://github.com/wlals111/TIL/blob/main/javascript/%EB%B0%B0%EC%97%B4%EB%A9%94%EC%86%8C%EB%93%9C.md) -[구조분해 할당](https://github.com/wlals111/TIL/blob/main/javascript/%EA%B5%AC%EC%A1%B0%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9.md) -[spread와 rest](https://github.com/wlals111/TIL/blob/main/javascript/spread%EC%99%80%20rest.md)
+- [배열 메소드](https://github.com/wlals111/TIL/blob/main/javascript/%EB%B0%B0%EC%97%B4%EB%A9%94%EC%86%8C%EB%93%9C.md)
+
+- [구조분해 할당](https://github.com/wlals111/TIL/blob/main/javascript/%EA%B5%AC%EC%A1%B0%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9.md)
+
+- [spread와 rest](https://github.com/wlals111/TIL/blob/main/javascript/spread%EC%99%80%20rest.md)
