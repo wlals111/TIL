@@ -23,7 +23,9 @@ DOM(HTML 문서)을 자바스크립트로 조작할 수 있게 해주는 명령�
 
 위의 html문서를 dom api를 통해서 접근해보도록 하겠음
 
-1. getElementById : 특정 id를 가진 요소 반환
+### getElementById
+
+특정 id를 가진 요소 반환
 
 ```javascript
 // id를 color로 갖는 div태그 자체를 반환
@@ -32,7 +34,9 @@ const $color = document.getElementById('color');
 console.log($color);
 ```
 
-1. querySelector : 특정 css선택자를 가지는 요소 반환
+### querySelector
+
+특정 css선택자를 가지는 요소 반환
 
 ```javascript
 // animal-info 클래스를 가지는 요소 반환
@@ -45,7 +49,9 @@ console.log($animalInfo);
 console.log(ageElement);
 ```
 
-3. querySelectorAll : 특정 css선택자를 가지는 모든 요소 반환
+### querySelectorAll
+
+특정 css선택자를 가지는 모든 요소 반환
 
 ```javascript
 // info-item 클래스를 가지는 모든 요소 반환
@@ -54,7 +60,9 @@ const $infoItem = document.querySelectorAll('div.info-item');
 console.log($infoItem);
 ```
 
-4. getElementsByClassName : 특정 클래스 명을 가지는 모든 요소 반환
+### getElementsByClassName
+
+특정 클래스 명을 가지는 모든 요소 반환
 
 ```javascript
 // info-item 클래스를 가지는 모든 요소 반환
@@ -63,7 +71,9 @@ const $infoItem = document.getElementsByClassName('info-item');
 console.log($infoItem);
 ```
 
-5. getElementByTagName : 특정 태그 명을 가지는 모든 요소 반환
+### getElementByTagName
+
+특정 태그 명을 가지는 모든 요소 반환
 
 ```javascript
 // div태그를 가지는 모든 요소 반환
@@ -72,7 +82,9 @@ const $div = document.getElementByTagName('div');
 console.log($div);
 ```
 
-6. className : 클래스 명 변경
+### className
+
+클래스 명 변경
 
 ```javascript
 const $name = document.getElementById('name');
@@ -82,7 +94,9 @@ $name.className = 'dog-name';
 console.log($name);
 ```
 
-7. id : 요소의 id값 추가, 수정
+### id
+
+요소의 id값 추가, 수정
 
 ```javascript
 const $animalInfo = document.querySelector('div.animal-info');
@@ -92,8 +106,13 @@ $animalInfo.id = 'animal';
 console.log($animalInfo);
 ```
 
-8. classList.add : 요소에 클래스 추가
-9. classList.remove : 요소에서 클래스 제거
+### classList.add
+
+요소에 클래스 추가
+
+### classList.remove
+
+요소에서 클래스 제거
 
 ```javascript
 const $color = document.getElementById('color');
@@ -107,7 +126,9 @@ $color.classList.remove('info-item');
 ocnsole.log($color);
 ```
 
-10. textContent : 요소의 텍스트 변경
+### textContent
+
+요소의 텍스트 변경
 
 ```javascript
 const $age = document.getElementById('age');
@@ -117,7 +138,9 @@ $age.textContent = '5살';
 console.log($age);
 ```
 
-11. style : 요소의 스타일 변경
+### style
+
+요소의 스타일 변경
 
 ```javascript
 const $color = document.getElementById('color');
@@ -127,9 +150,17 @@ $color.style.color = 'pink';
 console.log($color);
 ```
 
-12. createElement : 새로운 요소 생성
-13. createTextNode : 순수 텍스트만 생성함
-14. parent.appendChild(child) : 부모에 자식요소 추가
+### createElement
+
+새로운 요소 생성
+
+### createTextNode
+
+순수 텍스트만 생성함
+
+### parent.appendChild(child)
+
+부모에 자식요소 추가
 
 ```javascript
 // div태그를 가지는 요소 생성
