@@ -75,3 +75,88 @@ function getMenu(menu, callback) {
 getMenu('아메리카노', cafe.setMenu);
 console.log(cafe); // {brand: '투썸', menu: '', setMenu: ƒ}
 ```
+
+## 화살표 함수와 bind에서 this
+
+먼저 일반함수에서 this가 쓰인 예를 보자
+
+```javascript
+const testCar = {
+  name: 'benz',
+  getName: function () {
+    // getName이 testCar에 의해 호출되었으므로 this는 testCar를 가리킴
+    console.log('getName', this);
+
+    // innerFunc함수는 일반함수로 호출되었으므로 innerFunc안의 this는 전역객체를 가리킴
+    const innerFunc = function () {
+      console.log('innerFunc', this);
+    };
+    innerFunc();
+  },
+};
+
+testCar.getName();
+```
+
+이렇게 두 this의 바인딩값이 달라지는 것을 막기 위해 `.bind` 와 화살표 함수를 사용할 수 있다.
+
+`bind` 는 함수 자체를 this로 묶어야함 -> `함수.bind(고정시키고 싶은 값)`
+
+```javascript
+// .bind를 쓴 예
+
+const testCar = {
+  name: 'benz',
+  getName: function () {
+    // getName이 testCar에 의해 호출되었으므로 this는 testCar를 가리킴
+    console.log('getName', this);
+
+    // .bind로 this를 testCar로 고정시킴
+    const innerFunc = function () {
+      console.log('innerFunc', this);
+    }.bind(testCar);
+    innerFunc();
+  },
+};
+
+testCar.getName();
+```
+
+다음은 화살표 함수로 this를 고정시킨 예이다.
+
+화살표 함수에서의 this는 함수가 어떻게 호출되었는지가 아니라 어디서 선언되었는지를 기준으로 바뀜.
+
+화살표 함수에서 this는 화살표 함수가 속해있는 곳의 상위 스코프의 this를 계승 받음
+
+```javascript
+// 화살표 함수를 쓴 예
+
+const testCar = {
+  name: 'benz',
+  getName: function () {
+    // getName이 testCar에 의해 호출되었으므로 this는 testCar를 가리킴
+    console.log('getName', this);
+
+    // 상위 스코프에 있는 this를 계승 받음
+    const innerFunc = () => {
+      console.log('innerFunc', this);
+    };
+    innerFunc();
+  },
+};
+
+testCar.getName();
+```
+
+만약 게승받을 상위 스코프의 this가 없다면, this는 전역객체를 가리킴
+
+```javascript
+const cafe = {
+  brand: '투썸',
+  menu: '아메리카노',
+  print: () => {
+    console.log(this); // this는 window객체
+  },
+};
+cafe.print();
+```
